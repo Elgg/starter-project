@@ -32,6 +32,7 @@
       }
     }],
     "require": {
-      "elgg/elgg": "dev-elgg_application"
+      "elgg/elgg": "dev-elgg_application",
+      "srokap/code_review": "1.0.5"
     }
 }

@@ -4,8 +4,103 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ab7a17c3f60835b7f6425b5f65a94a90",
+    "hash": "c9eac6caff610dd712aa1c7af8052e5c",
     "packages": [
+        {
+            "name": "composer/installers",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "fadc14257fa015b3e07f4d64710ea02f99356ccd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/fadc14257fa015b3e07f4d64710ea02f99356ccd",
+                "reference": "fadc14257fa015b3e07f4d64710ea02f99356ccd",
+                "shasum": ""
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "Composer\\Installers\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\Installers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "http://composer.github.com/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "SMF",
+                "Thelia",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "elgg",
+                "fuelphp",
+                "grav",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "moodle",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "zend",
+                "zikula"
+            ],
+            "time": "2015-02-12 22:23:32"
+        },
         {
             "name": "elgg/elgg",
             "version": "dev-elgg_application",
@@ -296,6 +391,53 @@
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
             "time": "2015-01-16 16:20:00"
+        },
+        {
+            "name": "srokap/code_review",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Srokap/code_review.git",
+                "reference": "5a5967462217133b1c2ec2a08bc69b1cb23dcf14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Srokap/code_review/zipball/5a5967462217133b1c2ec2a08bc69b1cb23dcf14",
+                "reference": "5a5967462217133b1c2ec2a08bc69b1cb23dcf14",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": ">=1.0.8",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "elgg-plugin",
+            "autoload": {
+                "classmap": [
+                    "classes/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paweł Sroka",
+                    "email": "srokap@gmail.com"
+                }
+            ],
+            "description": "Elgg plugin that analyzes plugins code and provides basic information on code quality, compatibility and structure.",
+            "homepage": "https://github.com/Srokap/code_review",
+            "keywords": [
+                "analyzer",
+                "elgg",
+                "plugin",
+                "tools"
+            ],
+            "time": "2015-01-18 21:35:11"
         },
         {
             "name": "symfony/http-foundation",
