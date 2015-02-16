@@ -1,0 +1,37 @@
+{
+    "name": "srokap/elgg_as_dep",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paweł Sroka",
+            "email": "srokap@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/Srokap/Elgg"
+      }
+    ],
+    "extra-repositories": [{
+      "type": "package",
+      "package": {
+        "version": "dev-elgg_application",
+        "name": "elgg/elgg",
+        "source": {
+          "url": "https://github.com/Srokap/Elgg.git",
+          "type": "git",
+          "reference": "elgg_application"
+        },
+        "autoload": {
+          "psr-0": {
+            "": "engine/classes/"
+          }
+        }
+      }
+    }],
+    "require": {
+      "elgg/elgg": "dev-elgg_application"
+    }
+}
