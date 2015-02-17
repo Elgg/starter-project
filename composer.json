@@ -12,6 +12,10 @@
       {
         "type": "vcs",
         "url": "https://github.com/Srokap/Elgg"
+      },
+      {
+        "type": "vcs",
+        "url": "https://github.com/Srokap/Login-As"
       }
     ],
     "extra-repositories": [{
@@ -33,6 +37,7 @@
     }],
     "require": {
       "elgg/elgg": "dev-elgg_application",
-      "srokap/code_review": "1.0.5"
+      "srokap/code_review": "1.0.5",
+      "brettp/login_as": "dev-composer"
     }
 }

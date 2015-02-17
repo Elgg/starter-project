@@ -4,8 +4,41 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c9eac6caff610dd712aa1c7af8052e5c",
+    "hash": "b3ace540d630e67eaac3d28ff274e01c",
     "packages": [
+        {
+            "name": "brettp/login_as",
+            "version": "dev-composer",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Srokap/Login-As.git",
+                "reference": "05bc7c6bc4ab38fc2ca68305dd4821e53e444791"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Srokap/Login-As/zipball/05bc7c6bc4ab38fc2ca68305dd4821e53e444791",
+                "reference": "05bc7c6bc4ab38fc2ca68305dd4821e53e444791",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": ">=1.0.8"
+            },
+            "type": "elgg-plugin",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Brett Profitt",
+                    "email": "brett@elgg.org"
+                }
+            ],
+            "description": "Elgg plugin that allows admin users to login as another user.",
+            "support": {
+                "source": "https://github.com/Srokap/Login-As/tree/composer"
+            },
+            "time": "2015-02-17 22:54:03"
+        },
         {
             "name": "composer/installers",
             "version": "dev-master",
@@ -328,15 +361,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "8919ab6093ca028bbf54167088b476cc39bf9d3b"
+                "reference": "35c8c878f73dd71f669146b9b45aef333f7120e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/8919ab6093ca028bbf54167088b476cc39bf9d3b",
-                "reference": "8919ab6093ca028bbf54167088b476cc39bf9d3b",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/35c8c878f73dd71f669146b9b45aef333f7120e1",
+                "reference": "35c8c878f73dd71f669146b9b45aef333f7120e1",
                 "shasum": ""
             },
             "conflict": {
+                "contao/core": ">=2.11.0,<2.11.16|>=3.0.0,<3.1.0|>=3.1.0,<3.2.0|>=3.2.0,<3.2.7|>=2.11.0,<2.11.17|>=3.0.0,<3.1.0|>=3.1.0,<3.2.0|>=3.2.0,<3.2.9|>=2.11.0,<3.0.0|>=3.0.0,<3.1.0|>=3.1.0,<3.2.0|>=3.2.0,<3.2.19|>=3.3.0,<3.4.0|>=3.4.0,<3.4.4",
                 "doctrine/dbal": ">=2.0.0,<2.0.8|>=2.1.0,<2.1.2",
                 "doctrine/doctrine-module": "<=0.7.1|<=0.7.1",
                 "doctrine/orm": ">=2.0.0,<2.0.3",
@@ -390,7 +424,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2015-01-16 16:20:00"
+            "time": "2015-02-17 11:02:34"
         },
         {
             "name": "srokap/code_review",
@@ -551,7 +585,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "elgg/elgg": 20
+        "elgg/elgg": 20,
+        "brettp/login_as": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
