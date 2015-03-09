@@ -1,5 +1,5 @@
-/.idea
+.*
+!.gitignore
 /vendor
 /engine/settings.php
-/mod/code_review
-/mod/login_as
+/mod
