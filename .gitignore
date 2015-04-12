@@ -1,4 +1,5 @@
 .*
+!.travis.yml
 !.gitignore
 /vendor
 /engine/settings.php

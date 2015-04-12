@@ -1,24 +1,21 @@
 {
-    "name": "srokap/elgg_as_dep",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Paweł Sroka",
-            "email": "srokap@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "repositories": [
-      {
-        "type": "vcs",
-        "url": "https://github.com/Srokap/Elgg"
-      },
-      {
-        "type": "vcs",
-        "url": "https://github.com/Srokap/Login-As"
-      }
-    ],
-    "extra-repositories": [{
+  "name": "srokap/elgg_as_dep",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Paweł Sroka",
+      "email": "srokap@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Srokap/Elgg"
+    }
+  ],
+  "extra-repositories": [
+    {
       "type": "package",
       "package": {
         "version": "dev-elgg_application",
@@ -34,10 +31,15 @@
           }
         }
       }
-    }],
-    "require": {
-      "elgg/elgg": "dev-elgg_application",
-      "srokap/code_review": "1.0.5",
-      "brettp/login_as": "dev-composer"
     }
+  ],
+  "require": {
+    "elgg/elgg": "dev-elgg_application",
+    "srokap/code_review": "1.0.5",
+    "brettp/login_as": "dev-composer"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.1",
+    "phpunit/phpunit-selenium": "~1.4"
+  }
 }
