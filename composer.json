@@ -33,6 +33,11 @@
       }
     }
   ],
+  "autoload-dev": {
+    "psr-0": {
+      "Elgg\\E2E\\": "test/"
+    }
+  },
   "require": {
     "elgg/elgg": "dev-elgg_application",
     "srokap/code_review": "1.0.5",

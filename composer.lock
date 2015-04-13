@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cebad5523abf1e1fac08c3fd3f6f9897",
+    "hash": "4399548bad4fa18da3083d66122133ea",
     "packages": [
         {
             "name": "brettp/login_as",
