@@ -46,5 +46,30 @@
   "require-dev": {
     "phpunit/phpunit": "~4.1",
     "phpunit/phpunit-selenium": "~1.4"
+  },
+  "scripts": {
+    "test": "phpunit",
+    "travis:before_install": [
+      "export DISPLAY=:99.0",
+      "sh -e /etc/init.d/xvfb start"
+    ],
+    "travis:install": [
+      "wget http://selenium-release.storage.googleapis.com/2.44/selenium-server-standalone-2.44.0.jar",
+      "java -jar selenium-server-standalone-2.44.0.jar > /dev/null &",
+      "sleep 3",
+      "composer self-update",
+      "composer config -g github-oauth.github.com ${GITHUB_TOKEN}",
+      "composer install",
+      "mysql -e 'create database elgg;'",
+      "echo \"USE mysql; UPDATE user SET password=PASSWORD('password') WHERE user='root'; FLUSH PRIVILEGES;\" | mysql -u root",
+      "mkdir \"${HOME}/elgg_data/\"",
+      "php -f ./install/cli/travis_installer.php",
+      "php -S localhost:8888 index.php &",
+      "sleep 3"
+    ],
+    "travis:script": [
+      "curl -o - http://localhost:8888/ | grep \"<title>Elgg Travis Site</title>\"",
+      "composer test"
+    ]
   }
 }

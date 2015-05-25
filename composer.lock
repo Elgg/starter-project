@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4399548bad4fa18da3083d66122133ea",
+    "hash": "43082534c8b7d4076d479c5b121e2a75",
     "packages": [
         {
             "name": "brettp/login_as",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Srokap/Login-As.git",
-                "reference": "05bc7c6bc4ab38fc2ca68305dd4821e53e444791"
+                "reference": "22eae12a38b8403e7fc778956eecfe3a53e42691"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Srokap/Login-As/zipball/05bc7c6bc4ab38fc2ca68305dd4821e53e444791",
-                "reference": "05bc7c6bc4ab38fc2ca68305dd4821e53e444791",
+                "url": "https://api.github.com/repos/Srokap/Login-As/zipball/22eae12a38b8403e7fc778956eecfe3a53e42691",
+                "reference": "22eae12a38b8403e7fc778956eecfe3a53e42691",
                 "shasum": ""
             },
             "require": {
@@ -34,10 +34,14 @@
                 }
             ],
             "description": "Elgg plugin that allows admin users to login as another user.",
+            "keywords": [
+                "elgg",
+                "plugin"
+            ],
             "support": {
                 "source": "https://github.com/Srokap/Login-As/tree/composer"
             },
-            "time": "2015-02-17 22:54:03"
+            "time": "2015-02-18 13:05:25"
         },
         {
             "name": "composer/installers",
@@ -45,12 +49,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "f8c20b427de1cfe7a28a015c1640ce4e4eef1e33"
+                "reference": "a66f93a541c2214b4865161426b077e2b7d951de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/f8c20b427de1cfe7a28a015c1640ce4e4eef1e33",
-                "reference": "f8c20b427de1cfe7a28a015c1640ce4e4eef1e33",
+                "url": "https://api.github.com/repos/composer/installers/zipball/a66f93a541c2214b4865161426b077e2b7d951de",
+                "reference": "a66f93a541c2214b4865161426b077e2b7d951de",
                 "shasum": ""
             },
             "replace": {
@@ -132,7 +136,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-03-26 16:11:30"
+            "time": "2015-04-21 19:54:55"
         },
         {
             "name": "elgg/elgg",
@@ -140,12 +144,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Srokap/Elgg.git",
-                "reference": "d27f2f5551bc2200ecf225c1ef02ad461ae89c26"
+                "reference": "cb736f7de65fe6589210409ddbc369748cbdc8f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Srokap/Elgg/zipball/d27f2f5551bc2200ecf225c1ef02ad461ae89c26",
-                "reference": "d27f2f5551bc2200ecf225c1ef02ad461ae89c26",
+                "url": "https://api.github.com/repos/Srokap/Elgg/zipball/cb736f7de65fe6589210409ddbc369748cbdc8f4",
+                "reference": "cb736f7de65fe6589210409ddbc369748cbdc8f4",
                 "shasum": ""
             },
             "require": {
@@ -199,7 +203,7 @@
                 "source": "https://github.com/Srokap/Elgg/tree/elgg_application",
                 "issues": "https://github.com/Srokap/Elgg/issues"
             },
-            "time": "2015-04-11 20:03:13"
+            "time": "2015-04-19 16:28:22"
         },
         {
             "name": "elgg/login_as",
@@ -413,12 +417,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "a4c79b21bdad6cdc8d65227d7e99434c8f70009e"
+                "reference": "fef0e8976bb32ee354c92fc75559581db559148d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/a4c79b21bdad6cdc8d65227d7e99434c8f70009e",
-                "reference": "a4c79b21bdad6cdc8d65227d7e99434c8f70009e",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/fef0e8976bb32ee354c92fc75559581db559148d",
+                "reference": "fef0e8976bb32ee354c92fc75559581db559148d",
                 "shasum": ""
             },
             "conflict": {
@@ -435,6 +439,7 @@
                 "laravel/framework": ">=4.0.0,<4.0.99|>=4.1.0,<4.1.26|>=4.0.0,<4.0.99|>=4.1.0,<4.1.29",
                 "monolog/monolog": ">=1.8.0,<1.12.0",
                 "namshi/jose": "<1.1.2|<2.0.3|<2.2.0",
+                "pusher/pusher-php-server": "<2.2.1",
                 "sabre/dav": ">=1.6.0,<1.6.9|>=1.7.0,<1.7.7|>=1.8.0,<1.8.5|>=1.6.0,<1.6.99|>=1.7.0,<1.7.11|>=1.8.0,<1.8.9",
                 "socalnick/scn-social-auth": "<1.15.2",
                 "swiftmailer/swiftmailer": ">=4.0.0,<4.99.99|>=5.0.0,<5.2.1",
@@ -451,21 +456,30 @@
                 "symfony/web-profiler-bundle": ">=2.0.0,<2.1.0|>=2.1.0,<2.2.0|>=2.2.0,<2.3.0|>=2.3.0,<2.3.19|>=2.4.0,<2.4.9|>=2.5.0,<2.5.4",
                 "symfony/yaml": ">=2.0.0,<2.0.22|>=2.0.0,<2.0.22|>=2.1.0,<2.1.7",
                 "thelia/backoffice-default-template": ">=2.1.0,<2.1.2",
-                "thelia/thelia": ">=2.1.0,<2.1.2",
+                "thelia/thelia": ">=2.1.0,<2.1.2|>=2.1.0-beta1,<2.1.3",
                 "twig/twig": ">=1.0.0,<1.12.3",
+                "typo3/flow": ">=1.0.0,<1.0.4|>=1.1.0,<1.1.1|>=2.0.0,<2.0.1",
+                "typo3/neos": ">=1.1.0,<1.1.3|>=1.2.0,<1.2.3",
                 "willdurand/js-translation-bundle": "<2.1.1",
                 "yiisoft/yii": ">=1.1.14,<1.1.15",
+                "yiisoft/yii2": "<2.0.4",
+                "yiisoft/yii2-bootstrap": "<2.0.4",
+                "yiisoft/yii2-dev": "<2.0.4",
+                "yiisoft/yii2-gii": "<2.0.4",
+                "yiisoft/yii2-jui": "<2.0.4",
                 "zendframework/validator": ">=2.3.0,<2.3.6",
                 "zendframework/zend-db": ">=2.0.0,<2.0.99|>=2.1.0,<2.1.99|>=2.2.0,<2.2.8|>=2.3.0,<2.3.3|>=2.0.0,<2.0.99|>=2.1.0,<2.1.99|>=2.2.0,<2.2.10|>=2.3.0,<2.3.5",
                 "zendframework/zend-form": ">=2.0.0,<2.2.7|>=2.3.0,<2.3.1",
+                "zendframework/zend-http": ">=2.0.0,<2.0.99|>=2.1.0,<2.1.99|>=2.3.0,<2.3.8|>=2.4.0,<2.4.1",
                 "zendframework/zend-json": ">=2.1.0,<2.1.6|>=2.2.0,<2.2.6",
                 "zendframework/zend-ldap": ">=2.0.0,<2.0.99|>=2.1.0,<2.1.99|>=2.2.0,<2.2.8|>=2.3.0,<2.3.3",
+                "zendframework/zend-mail": ">=2.0.0,<2.0.99|>=2.1.0,<2.1.99|>=2.3.0,<2.3.8|>=2.4.0,<2.4.1",
                 "zendframework/zend-navigation": ">=2.0.0,<2.2.7|>=2.3.0,<2.3.1",
                 "zendframework/zend-session": ">=2.0.0,<2.0.99|>=2.1.0,<2.1.99|>=2.2.0,<2.2.9|>=2.3.0,<2.3.4",
                 "zendframework/zend-view": ">=2.0.0,<2.2.7|>=2.3.0,<2.3.1",
                 "zendframework/zend-xmlrpc": ">=2.1.0,<2.1.6|>=2.2.0,<2.2.6",
-                "zendframework/zendframework": ">=2.0.0,<2.0.1|>=2.0.0,<2.0.5|>=2.0.0,<2.0.8|>=2.1.0,<2.1.4|>=2.0.0,<2.0.8|>=2.1.0,<2.1.4|>=2.0.0,<2.0.8|>=2.1.0,<2.1.4|>=2.2.0,<2.2.5|>=2.1.0,<2.1.6|>=2.2.0,<2.2.6|>=2.0.0,<2.2.7|>=2.3.0,<2.3.1|>=2.0.0,<2.0.99|>=2.1.0,<2.1.99|>=2.2.0,<2.2.8|>=2.3.0,<2.3.3|>=2.0.0,<2.0.99|>=2.1.0,<2.1.99|>=2.2.0,<2.2.8|>=2.3.0,<2.3.3|>=2.0.0,<2.0.99|>=2.1.0,<2.1.99|>=2.2.0,<2.2.9|>=2.3.0,<2.3.4|>=2.0.0,<2.0.99|>=2.1.0,<2.1.99|>=2.2.0,<2.2.10|>=2.3.0,<2.3.5|>=2.3.0,<2.3.6",
-                "zendframework/zendframework1": ">=1.7.0,<1.7.5|>=1.7.0,<1.7.6|>=1.9.0,<1.9.7|>=1.7.0,<1.7.9|>=1.8.0,<1.8.5|>=1.9.0,<1.9.7|>=1.7.0,<1.7.9|>=1.8.0,<1.8.5|>=1.9.0,<1.9.7|>=1.8.0,<1.8.5|>=1.9.0,<1.9.7|>=1.7.0,<1.7.9|>=1.8.0,<1.8.5|>=1.9.0,<1.9.7|>=1.7.0,<1.7.9|>=1.8.0,<1.8.5|>=1.9.0,<1.9.7|>=1.9.0,<1.9.8|>=1.10.0,<1.10.3|>=1.0.0,<1.11.4|>=1.10.0,<1.10.9|>=1.11.0,<1.11.6|>=1.0.0,<1.11.13|>=1.0.0,<1.11.13|>=1.11.0,<1.11.15|>=1.12.0,<1.12.1|>=1.12.0,<1.12.4|>=1.12.0,<1.12.4|>=1.12.0,<1.12.7|>=1.12.0,<1.12.9|>=1.12.0,<1.12.9",
+                "zendframework/zendframework": ">=2.0.0,<2.0.1|>=2.0.0,<2.0.5|>=2.0.0,<2.0.8|>=2.1.0,<2.1.4|>=2.0.0,<2.0.8|>=2.1.0,<2.1.4|>=2.0.0,<2.0.8|>=2.1.0,<2.1.4|>=2.2.0,<2.2.5|>=2.1.0,<2.1.6|>=2.2.0,<2.2.6|>=2.0.0,<2.2.7|>=2.3.0,<2.3.1|>=2.0.0,<2.0.99|>=2.1.0,<2.1.99|>=2.2.0,<2.2.8|>=2.3.0,<2.3.3|>=2.0.0,<2.0.99|>=2.1.0,<2.1.99|>=2.2.0,<2.2.8|>=2.3.0,<2.3.3|>=2.0.0,<2.0.99|>=2.1.0,<2.1.99|>=2.2.0,<2.2.9|>=2.3.0,<2.3.4|>=2.0.0,<2.0.99|>=2.1.0,<2.1.99|>=2.2.0,<2.2.10|>=2.3.0,<2.3.5|>=2.3.0,<2.3.6|>=2.0.0,<2.0.99|>=2.1.0,<2.1.99|>=2.3.0,<2.3.8|>=2.4.0,<2.4.1",
+                "zendframework/zendframework1": ">=1.7.0,<1.7.5|>=1.7.0,<1.7.6|>=1.9.0,<1.9.7|>=1.7.0,<1.7.9|>=1.8.0,<1.8.5|>=1.9.0,<1.9.7|>=1.7.0,<1.7.9|>=1.8.0,<1.8.5|>=1.9.0,<1.9.7|>=1.7.0,<1.7.9|>=1.8.0,<1.8.5|>=1.9.0,<1.9.7|>=1.7.0,<1.7.9|>=1.8.0,<1.8.5|>=1.9.0,<1.9.7|>=1.9.0,<1.9.8|>=1.10.0,<1.10.3|>=1.0.0,<1.11.4|>=1.10.0,<1.10.9|>=1.11.0,<1.11.6|>=1.0.0,<1.11.13|>=1.0.0,<1.11.13|>=1.11.0,<1.11.15|>=1.12.0,<1.12.1|>=1.12.0,<1.12.4|>=1.12.0,<1.12.4|>=1.12.0,<1.12.7|>=1.12.0,<1.12.9|>=1.12.0,<1.12.9|>=1.12.0,<1.12.12",
                 "zendframework/zendopenid": ">=2.0.0,<2.0.2",
                 "zf-commons/zfc-user": "<1.2.2",
                 "zfr/zfr-oauth2-server-module": "<0.1.2"
@@ -483,7 +497,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2015-04-12 22:18:45"
+            "time": "2015-05-20 13:30:39"
         },
         {
             "name": "srokap/code_review",
@@ -535,16 +549,15 @@
         {
             "name": "symfony/http-foundation",
             "version": "2.8.x-dev",
-            "target-dir": "Symfony/Component/HttpFoundation",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "75b824419347be1926b3bb9ad14bb3c09d0b5141"
+                "reference": "06aa08b5d9157abc10bee99712124b8b994d4259"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/75b824419347be1926b3bb9ad14bb3c09d0b5141",
-                "reference": "75b824419347be1926b3bb9ad14bb3c09d0b5141",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/06aa08b5d9157abc10bee99712124b8b994d4259",
+                "reference": "06aa08b5d9157abc10bee99712124b8b994d4259",
                 "shasum": ""
             },
             "require": {
@@ -561,11 +574,11 @@
                 }
             },
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "Symfony\\Component\\HttpFoundation\\": ""
                 },
                 "classmap": [
-                    "Symfony/Component/HttpFoundation/Resources/stubs"
+                    "Resources/stubs"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -574,17 +587,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony HttpFoundation Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-04-10 08:56:33"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-15 14:11:12"
         },
         {
             "name": "tedivm/stash",
@@ -648,12 +661,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "fc999e2f0508e434645ec2bfadeb89d39fa6453c"
+                "reference": "b70d22758c0813ea5fef9c22480caadd3a2b6a56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/fc999e2f0508e434645ec2bfadeb89d39fa6453c",
-                "reference": "fc999e2f0508e434645ec2bfadeb89d39fa6453c",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/b70d22758c0813ea5fef9c22480caadd3a2b6a56",
+                "reference": "b70d22758c0813ea5fef9c22480caadd3a2b6a56",
                 "shasum": ""
             },
             "require": {
@@ -694,7 +707,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2015-04-12 20:59:10"
+            "time": "2015-05-13 13:33:36"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -702,12 +715,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "d1da796ba5565789a623052eb9f2cf59d57fec60"
+                "reference": "ae15da2ce234d3ffe5d7fafcdad19c7f1acf3568"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/d1da796ba5565789a623052eb9f2cf59d57fec60",
-                "reference": "d1da796ba5565789a623052eb9f2cf59d57fec60",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/ae15da2ce234d3ffe5d7fafcdad19c7f1acf3568",
+                "reference": "ae15da2ce234d3ffe5d7fafcdad19c7f1acf3568",
                 "shasum": ""
             },
             "require": {
@@ -717,7 +730,6 @@
                 "phpunit/phpunit": "~4.0"
             },
             "suggest": {
-                "dflydev/markdown": "~1.0",
                 "erusev/parsedown": "~1.0",
                 "league/commonmark": "*"
             },
@@ -744,7 +756,7 @@
                     "email": "mike.vanriel@naenius.com"
                 }
             ],
-            "time": "2015-02-27 09:28:18"
+            "time": "2015-05-12 07:21:12"
         },
         {
             "name": "phpspec/prophecy",
@@ -752,12 +764,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "8724cd239f8ef4c046f55a3b18b4d91cc7f3e4c5"
+                "reference": "5a355f91730c845301a9e28f91c8a5053353c496"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/8724cd239f8ef4c046f55a3b18b4d91cc7f3e4c5",
-                "reference": "8724cd239f8ef4c046f55a3b18b4d91cc7f3e4c5",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/5a355f91730c845301a9e28f91c8a5053353c496",
+                "reference": "5a355f91730c845301a9e28f91c8a5053353c496",
                 "shasum": ""
             },
             "require": {
@@ -804,7 +816,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2015-03-27 19:31:25"
+            "time": "2015-05-20 16:00:43"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -812,12 +824,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "34a9c28761a7513d59c461f321f712c92c561188"
+                "reference": "672248f49a25fcca46aa6c73612d6731d6b83c4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/34a9c28761a7513d59c461f321f712c92c561188",
-                "reference": "34a9c28761a7513d59c461f321f712c92c561188",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/672248f49a25fcca46aa6c73612d6731d6b83c4a",
+                "reference": "672248f49a25fcca46aa6c73612d6731d6b83c4a",
                 "shasum": ""
             },
             "require": {
@@ -866,7 +878,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-04-11 09:01:16"
+            "time": "2015-05-25 16:40:23"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -1058,12 +1070,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "81d9f7d52f2bbdf3de9659183a8678d7f774488f"
+                "reference": "49c2007b90b8a619e2057785e8fbc331b7b760ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/81d9f7d52f2bbdf3de9659183a8678d7f774488f",
-                "reference": "81d9f7d52f2bbdf3de9659183a8678d7f774488f",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/49c2007b90b8a619e2057785e8fbc331b7b760ff",
+                "reference": "49c2007b90b8a619e2057785e8fbc331b7b760ff",
                 "shasum": ""
             },
             "require": {
@@ -1122,7 +1134,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-04-11 05:26:28"
+            "time": "2015-05-25 03:53:30"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1607,33 +1619,32 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "2.8.x-dev",
-            "target-dir": "Symfony/Component/Yaml",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "fdded56dde4ca9efce6322887bf5eaa7bb0aae3e"
+                "reference": "28a6a5c1ac255efbc167d273530c66dcea94e13f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/fdded56dde4ca9efce6322887bf5eaa7bb0aae3e",
-                "reference": "fdded56dde4ca9efce6322887bf5eaa7bb0aae3e",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/28a6a5c1ac255efbc167d273530c66dcea94e13f",
+                "reference": "28a6a5c1ac255efbc167d273530c66dcea94e13f",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.5.9"
             },
             "require-dev": {
-                "symfony/phpunit-bridge": "~2.7|~3.0.0"
+                "symfony/phpunit-bridge": "~2.8|~3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "Symfony\\Component\\Yaml\\": ""
                 }
             },
@@ -1643,17 +1654,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Yaml Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-04-10 08:56:33"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-12 15:48:43"
         }
     ],
     "aliases": [],
