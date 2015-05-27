@@ -26,18 +26,14 @@ server {
 	}
 	
 	# public Elgg assets for BC until these are sent through the simplecache system
-	location /_graphics {
-		rewrite ^_graphics/(.*)$ vendor/elgg/elgg/_graphics/$1;
-	}
-
-	location /vendors {
-		rewrite ^vendors/(.*)$ vendor/elgg/elgg/vendors/$1;
+	location / {
+		rewrite ^((_graphics|vendors|js|mod)/.*)$ /vendor/elgg/elgg/$1;
 	}
 
 	location = /rewrite.php {
 		rewrite ^(.*)$ /install.php;
 	}
-
+	
 	location / {
 		try_files $uri $uri/ /index.php?__elgg_uri=$uri&$query_string;
 	}
