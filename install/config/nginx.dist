@@ -24,6 +24,15 @@ server {
 		rewrite ^/export\/([A-Za-z]+)\/([0-9]+)\/?$ /vendor/elgg/elgg/engine/handlers/export_handler.php?view=$1&guid=$2;
 		rewrite ^/export\/([A-Za-z]+)\/([0-9]+)\/([A-Za-z]+)\/([A-Za-z0-9\_]+)\/$ /vendor/elgg/elgg/engine/handlers/export_handler.php?view=$1&guid=$2&type=$3&idname=$4;
 	}
+	
+	# public Elgg assets for BC until these are sent through the simplecache system
+	location /_graphics {
+		rewrite ^_graphics/(.*)$ vendor/elgg/elgg/_graphics/$1;
+	}
+
+	location /vendors {
+		rewrite ^vendors/(.*)$ vendor/elgg/elgg/vendors/$1;
+	}
 
 	location = /rewrite.php {
 		rewrite ^(.*)$ /install.php;

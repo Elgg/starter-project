@@ -134,6 +134,10 @@ RewriteRule ^cache\/(.*)$ vendor/elgg/elgg/engine/handlers/cache_handler.php?req
 RewriteRule ^export\/([A-Za-z]+)\/([0-9]+)\/?$ vendor/elgg/elgg/engine/handlers/export_handler.php?view=$1&guid=$2 [L]
 RewriteRule ^export\/([A-Za-z]+)\/([0-9]+)\/([A-Za-z]+)\/([A-Za-z0-9\_]+)\/$ vendor/elgg/elgg/engine/handlers/export_handler.php?view=$1&guid=$2&type=$3&idname=$4 [L]
 
+# public Elgg assets for BC until these are sent through the simplecache system
+RewriteRule ^_graphics/(.*)$ vendor/elgg/elgg/_graphics/$1
+RewriteRule ^vendors/(.*)$ vendor/elgg/elgg/vendors/$1
+
 # rule for rewrite module test during install - can be removed after installation
 RewriteRule ^rewrite.php$ install.php [L]
 
