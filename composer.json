@@ -1,45 +1,88 @@
 {
   "name": "elgg/starter-project",
+  "description": "Gets you up and running with an Elgg-based site quickly",
   "license": "MIT",
-  "authors": [
-    {
-      "name": "Paweł Sroka",
-      "email": "srokap@gmail.com"
-    }
-  ],
   "minimum-stability": "dev",
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/Srokap/Elgg"
-    }
-  ],
-  "extra-repositories": [
-    {
-      "type": "package",
-      "package": {
-        "version": "dev-elgg_application",
-        "name": "elgg/elgg",
-        "source": {
-          "url": "https://github.com/Srokap/Elgg.git",
-          "type": "git",
-          "reference": "elgg_application"
-        },
-        "autoload": {
-          "psr-0": {
-            "": "engine/classes/"
-          }
-        }
-      }
-    }
-  ],
-  "autoload-dev": {
-    "psr-0": {
-      "Elgg\\E2E\\": "test/"
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "": "./classes/"
     }
   },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "travis:before_install": [
+      "export DISPLAY=:99.0",
+      "sh -e /etc/init.d/xvfb start"
+    ],
+    "travis:install": [
+      "wget http://selenium-release.storage.googleapis.com/2.44/selenium-server-standalone-2.44.0.jar",
+      "java -jar selenium-server-standalone-2.44.0.jar > /dev/null &",
+      "sleep 3",
+      "composer config -g github-oauth.github.com ${GITHUB_TOKEN}",
+      "composer self-update",
+      "composer global require fxp/composer-asset-plugin:~1.0",
+      "composer install",
+      "mysql -e 'create database elgg;'",
+      "echo \"USE mysql; UPDATE user SET password=PASSWORD('password') WHERE user='root'; FLUSH PRIVILEGES;\" | mysql -u root",
+      "mkdir \"${HOME}/elgg_data/\"",
+      "php -f vendor/elgg/elgg/install/cli/travis_installer.php",
+      "php -S localhost:8888 index.php &",
+      "sleep 3"
+    ],
+    "travis:script": [
+      "curl -o - http://localhost:8888/ | grep \"<title>Elgg Travis Site</title>\"",
+      "composer test"
+    ]
+  },
+  "repositories": [
+      {
+          "type": "package",
+          "package": {
+              "name": "bower-asset/sprintf",
+              "version": "0.7.0",
+              "dist": {
+                  "type": "zip",
+                  "url": "https://github.com/alexei/sprintf.js/archive/v0.7.zip"
+              }
+          }
+      },
+      {
+          "type": "package",
+          "package": {
+              "name": "bower-asset/jquery-imgareaselect",
+              "version": "0.9.10",
+              "dist": {
+                  "type": "zip",
+                  "url": "https://github.com/odyniec/imgareaselect/archive/v0.9.10.zip"
+              }
+          }
+      },
+      {
+          "type": "package",
+          "package": {
+              "name": "bower-asset/jquery-ui-extensions",
+              "version": "dev-master",
+              "dist": {
+                  "type": "zip",
+                  "url": "https://github.com/scottgonzalez/jquery-ui-extensions/archive/fb7fd7df3d70e0288394f07bfe78262b548c30d6.zip"
+              }
+          }
+      },
+      {
+          "type": "package",
+          "package": {
+              "name": "bower-asset/jquery-jeditable",
+              "version": "1.7.3",
+              "dist": {
+                  "type": "zip",
+                  "url": "https://github.com/tuupola/jquery_jeditable/archive/1.7.3.zip"
+              }
+          }
+      }
+  ],
   "require": {
-    "elgg/elgg": "dev-elgg_application",
+    "elgg/elgg": "dev-master",
     "srokap/code_review": "1.0.5",
     "brettp/login_as": "dev-composer"
   },

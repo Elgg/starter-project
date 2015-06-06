@@ -1,32 +1,14 @@
 language: php
 php:
-- 5.4
 - 5.5
 - 5.6
 branches:
 - master
 services:
 - mysql
-before_install:
-- export DISPLAY=:99.0
-- sh -e /etc/init.d/xvfb start
-install:
-- wget http://selenium-release.storage.googleapis.com/2.44/selenium-server-standalone-2.44.0.jar
-- java -jar selenium-server-standalone-2.44.0.jar > /dev/null &
-- sleep 3
-- composer self-update
-- composer config -g github-oauth.github.com ${GITHUB_TOKEN}
-- composer install
-- mysql -e 'create database elgg;'
-- echo "USE mysql; UPDATE user SET password=PASSWORD('password') WHERE user='root';
-  FLUSH PRIVILEGES;" | mysql -u root
-- mkdir "${HOME}/elgg_data/"
-- php -f ./install/cli/travis_installer.php
-- php -S localhost:8888 index.php &
-- sleep 3
-script:
-- curl -o - http://localhost:8888/ | grep "<title>Elgg Travis Site</title>"
-- phpunit
+before_install: composer travis:before_install
+install: composer travis:install
+script: composer travis:script
 env:
   global:
     secure: WpVdd58dDYMboyZ9fX9b/xnz291aMJVf14OKOzuf6zhDDHaW90d8XiF0NKQI2GaNxMwz33z+QtaD5xV6Zq4yJsJG9hs3/XzWwORKVSRB13BKm0ypvrrtFo/EzONuWwsTF52d8ql+TKN+OzuEwDTeo1YIGbS0z8uYe8uYbTGjoCc=
