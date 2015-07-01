@@ -1,6 +1,7 @@
 .*
+!.htaccess
 !.travis.yml
 !.gitignore
-/vendor
-/engine/settings.php
+/settings.php
 /mod
+/vendor
