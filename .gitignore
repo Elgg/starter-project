@@ -2,6 +2,7 @@
 !.htaccess
 !.travis.yml
 !.gitignore
+/cache
 /settings.php
 /mod
 /vendor
