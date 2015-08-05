@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "15864e1e20a8e3928894c0f53eca3f64",
+    "hash": "09026d371b603c6b5253e3838dff5913",
     "packages": [
         {
             "name": "bower-asset/jquery",
@@ -52,16 +52,16 @@
         },
         {
             "name": "bower-asset/jquery-colorbox",
-            "version": "1.6.1",
+            "version": "1.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jackmoore/colorbox.git",
-                "reference": "7c13e71cb12bb7291a674ca09f78de0c823aad8f"
+                "reference": "d9b74f2289b315c36b2e4b2bce01a799bf851aed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jackmoore/colorbox/zipball/7c13e71cb12bb7291a674ca09f78de0c823aad8f",
-                "reference": "7c13e71cb12bb7291a674ca09f78de0c823aad8f",
+                "url": "https://api.github.com/repos/jackmoore/colorbox/zipball/d9b74f2289b315c36b2e4b2bce01a799bf851aed",
+                "reference": "d9b74f2289b315c36b2e4b2bce01a799bf851aed",
                 "shasum": ""
             },
             "require": {
@@ -179,21 +179,22 @@
         },
         {
             "name": "bower-asset/requirejs",
-            "version": "2.1.18",
+            "version": "2.1.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jrburke/requirejs-bower.git",
-                "reference": "2371079308b0ae6deaf7a9d8485de335b276830b"
+                "reference": "ad0230c737a1289c3ffe3d76ce0f86366955239a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jrburke/requirejs-bower/zipball/2371079308b0ae6deaf7a9d8485de335b276830b",
-                "reference": "2371079308b0ae6deaf7a9d8485de335b276830b",
+                "url": "https://api.github.com/repos/jrburke/requirejs-bower/zipball/ad0230c737a1289c3ffe3d76ce0f86366955239a",
+                "reference": "ad0230c737a1289c3ffe3d76ce0f86366955239a",
                 "shasum": ""
             },
             "type": "bower-asset-library",
             "extra": {
-                "bower-asset-main": "require.js"
+                "bower-asset-main": "require.js",
+                "bower-asset-ignore": []
             },
             "license": [
                 "BSD-3-Clause",
@@ -328,6 +329,33 @@
                 "zikula"
             ],
             "time": "2015-02-18 17:17:01"
+        },
+        {
+            "name": "container-interop/container-interop",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "time": "2014-12-30 15:22:37"
         },
         {
             "name": "doctrine/annotations",
@@ -799,164 +827,17 @@
             "time": "2014-09-09 13:34:57"
         },
         {
-            "name": "elgg/aalborg_theme",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/aalborg_theme.git",
-                "reference": "f7dbb0012fa9b2ea30c422523d428a9093a60785"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/aalborg_theme/zipball/f7dbb0012fa9b2ea30c422523d428a9093a60785",
-                "reference": "f7dbb0012fa9b2ea30c422523d428a9093a60785",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
-        },
-        {
-            "name": "elgg/blog",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/blog.git",
-                "reference": "1f99c078135776ec9c7c50dc96e44f5679583edd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/blog/zipball/1f99c078135776ec9c7c50dc96e44f5679583edd",
-                "reference": "1f99c078135776ec9c7c50dc96e44f5679583edd",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
-        },
-        {
-            "name": "elgg/bookmarks",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/bookmarks.git",
-                "reference": "5d639dbee600f41fffedfc342a17de664bde334c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/bookmarks/zipball/5d639dbee600f41fffedfc342a17de664bde334c",
-                "reference": "5d639dbee600f41fffedfc342a17de664bde334c",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
-        },
-        {
-            "name": "elgg/ckeditor",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/ckeditor.git",
-                "reference": "79d784dd894e439abb1055ae9d1a42df285a2707"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/ckeditor/zipball/79d784dd894e439abb1055ae9d1a42df285a2707",
-                "reference": "79d784dd894e439abb1055ae9d1a42df285a2707",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
-        },
-        {
-            "name": "elgg/dashboard",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/dashboard.git",
-                "reference": "a668c587de3e7caac83165cee47fefa5927e278f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/dashboard/zipball/a668c587de3e7caac83165cee47fefa5927e278f",
-                "reference": "a668c587de3e7caac83165cee47fefa5927e278f",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
-        },
-        {
-            "name": "elgg/developers",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/developers.git",
-                "reference": "5d802ad08a8a822b461656c099bc92c6e699b19c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/developers/zipball/5d802ad08a8a822b461656c099bc92c6e699b19c",
-                "reference": "5d802ad08a8a822b461656c099bc92c6e699b19c",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
-        },
-        {
-            "name": "elgg/diagnostics",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/diagnostics.git",
-                "reference": "7b05263b4370d596310cac010db4d1b34c722341"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/diagnostics/zipball/7b05263b4370d596310cac010db4d1b34c722341",
-                "reference": "7b05263b4370d596310cac010db4d1b34c722341",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-06 19:32:45"
-        },
-        {
             "name": "elgg/elgg",
-            "version": "dev-composer-dependency",
+            "version": "2.0.0-alpha.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ewinslow/Elgg.git",
-                "reference": "7c7306f7fd04cffaa36974aeb4aa74aef4884e7c"
+                "url": "https://github.com/Elgg/Elgg.git",
+                "reference": "93cc01875748b7db65b58d77feabaa24b7841aa0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ewinslow/Elgg/zipball/7c7306f7fd04cffaa36974aeb4aa74aef4884e7c",
-                "reference": "7c7306f7fd04cffaa36974aeb4aa74aef4884e7c",
+                "url": "https://api.github.com/repos/Elgg/Elgg/zipball/93cc01875748b7db65b58d77feabaa24b7841aa0",
+                "reference": "93cc01875748b7db65b58d77feabaa24b7841aa0",
                 "shasum": ""
             },
             "require": {
@@ -976,7 +857,9 @@
                 "ext-json": "*",
                 "ext-pdo": "*",
                 "ext-xml": "*",
+                "fortawesome/font-awesome": "^4.3",
                 "league/flysystem": "~1.0",
+                "michelf/php-markdown": "^1.5.0",
                 "mrclay/minify": "~2.0",
                 "php": ">=5.5",
                 "roave/security-advisories": "dev-master",
@@ -1001,232 +884,12 @@
                     "": "engine/classes/"
                 }
             },
-            "autoload-dev": {
-                "psr-0": {
-                    "": "engine/tests/phpunit/"
-                }
-            },
-            "scripts": {
-                "pre-install-cmd": [
-                    "php .scripts/check_global_requirements.php"
-                ],
-                "lint": [
-                    "phpcs --standard=vendor/elgg/sniffs/elgg.xml --warning-severity=0 --ignore=*/tests/*,*/upgrades/*,*/deprecated* engine/classes engine/lib",
-                    "composer validate"
-                ],
-                "test": [
-                    "phpunit"
-                ],
-                "travis:install": [
-                    "composer self-update",
-                    "composer global require \"fxp/composer-asset-plugin:~1.0\"",
-                    "composer install"
-                ],
-                "travis:install-with-mysql": [
-                    "composer travis:install",
-                    "mysql -e 'create database elgg;'",
-                    "echo \"USE mysql; UPDATE user SET password=PASSWORD('password') WHERE user='root'; FLUSH PRIVILEGES;\" | mysql -u root",
-                    "mkdir \"${HOME}/elgg_data/\"",
-                    "php -f ./install/cli/travis_installer.php"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0"
             ],
             "description": "Elgg is an award-winning social networking engine, delivering the building blocks that enable businesses, schools, universities and associations to create their own fully-featured social networks and applications.",
-            "support": {
-                "source": "https://github.com/ewinslow/Elgg/tree/composer-dependency"
-            },
-            "time": "2015-06-26 11:21:42"
-        },
-        {
-            "name": "elgg/embed",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/embed.git",
-                "reference": "a0b5fbe963787d1040a1514630ebc63d7022f967"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/embed/zipball/a0b5fbe963787d1040a1514630ebc63d7022f967",
-                "reference": "a0b5fbe963787d1040a1514630ebc63d7022f967",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 02:35:58"
-        },
-        {
-            "name": "elgg/externalpages",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/externalpages.git",
-                "reference": "f5f859c09edf94cabc77854818bd848210e473b2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/externalpages/zipball/f5f859c09edf94cabc77854818bd848210e473b2",
-                "reference": "f5f859c09edf94cabc77854818bd848210e473b2",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-06 19:32:45"
-        },
-        {
-            "name": "elgg/file",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/file.git",
-                "reference": "080a7c9430822fdc427720c3e3d04a6a0488d223"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/file/zipball/080a7c9430822fdc427720c3e3d04a6a0488d223",
-                "reference": "080a7c9430822fdc427720c3e3d04a6a0488d223",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
-        },
-        {
-            "name": "elgg/garbagecollector",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/garbagecollector.git",
-                "reference": "17fe39af025bad59aef272533252202876ec97a2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/garbagecollector/zipball/17fe39af025bad59aef272533252202876ec97a2",
-                "reference": "17fe39af025bad59aef272533252202876ec97a2",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-06 01:18:02"
-        },
-        {
-            "name": "elgg/groups",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/groups.git",
-                "reference": "b7fe31e8d096819b85c45a36f5bef2cabeaac125"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/groups/zipball/b7fe31e8d096819b85c45a36f5bef2cabeaac125",
-                "reference": "b7fe31e8d096819b85c45a36f5bef2cabeaac125",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
-        },
-        {
-            "name": "elgg/htmlawed",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/htmlawed.git",
-                "reference": "e1c17cf6406eaf933c380e0cbb8e4dac53bb66ff"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/htmlawed/zipball/e1c17cf6406eaf933c380e0cbb8e4dac53bb66ff",
-                "reference": "e1c17cf6406eaf933c380e0cbb8e4dac53bb66ff",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-06 01:18:02"
-        },
-        {
-            "name": "elgg/invitefriends",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/invitefriends.git",
-                "reference": "6013ad868050a155ecc1f802befacaac6628f69f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/invitefriends/zipball/6013ad868050a155ecc1f802befacaac6628f69f",
-                "reference": "6013ad868050a155ecc1f802befacaac6628f69f",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-06 01:18:02"
-        },
-        {
-            "name": "elgg/likes",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/likes.git",
-                "reference": "518622292d1bb57e0ed0007b4b1eeed13d159d90"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/likes/zipball/518622292d1bb57e0ed0007b4b1eeed13d159d90",
-                "reference": "518622292d1bb57e0ed0007b4b1eeed13d159d90",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-06 19:32:45"
-        },
-        {
-            "name": "elgg/logbrowser",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/logbrowser.git",
-                "reference": "dd476dd6bccbf9266b4f7dd76efdc3709882da52"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/logbrowser/zipball/dd476dd6bccbf9266b4f7dd76efdc3709882da52",
-                "reference": "dd476dd6bccbf9266b4f7dd76efdc3709882da52",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-06 01:18:02"
+            "time": "2015-07-07 09:13:44"
         },
         {
             "name": "elgg/login_as",
@@ -1264,284 +927,76 @@
             "time": "2015-02-28 20:54:43"
         },
         {
-            "name": "elgg/logrotate",
-            "version": "dev-master",
+            "name": "fortawesome/font-awesome",
+            "version": "v4.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Elgg/logrotate.git",
-                "reference": "74d2e58a465053ba5e58f53bd235c4fbb685c61e"
+                "url": "https://github.com/FortAwesome/Font-Awesome.git",
+                "reference": "e554555d73a44e0a7d11b0361ad7a5325a5f551c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/logrotate/zipball/74d2e58a465053ba5e58f53bd235c4fbb685c61e",
-                "reference": "74d2e58a465053ba5e58f53bd235c4fbb685c61e",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/e554555d73a44e0a7d11b0361ad7a5325a5f551c",
+                "reference": "e554555d73a44e0a7d11b0361ad7a5325a5f551c",
                 "shasum": ""
             },
-            "require": {
-                "composer/installers": ">=1.0.8"
+            "require-dev": {
+                "jekyll": "1.0.2",
+                "lessc": "1.4.2"
             },
-            "type": "elgg-plugin",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-06 01:18:02"
-        },
-        {
-            "name": "elgg/members",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/members.git",
-                "reference": "4cf08b689d236fadfb76e11422a5b100b31743f6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/members/zipball/4cf08b689d236fadfb76e11422a5b100b31743f6",
-                "reference": "4cf08b689d236fadfb76e11422a5b100b31743f6",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
-        },
-        {
-            "name": "elgg/messageboard",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/messageboard.git",
-                "reference": "7a8a247784ae0bbc2ca2f466c883884ef94a5087"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/messageboard/zipball/7a8a247784ae0bbc2ca2f466c883884ef94a5087",
-                "reference": "7a8a247784ae0bbc2ca2f466c883884ef94a5087",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
-        },
-        {
-            "name": "elgg/messages",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/messages.git",
-                "reference": "dfea4f86bdbab47ccd56fe148f72aa53713cbf07"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/messages/zipball/dfea4f86bdbab47ccd56fe148f72aa53713cbf07",
-                "reference": "dfea4f86bdbab47ccd56fe148f72aa53713cbf07",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
-        },
-        {
-            "name": "elgg/notifications",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/notifications.git",
-                "reference": "21c6deec94e9130a4a6abe44cd001667a62fbcf7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/notifications/zipball/21c6deec94e9130a4a6abe44cd001667a62fbcf7",
-                "reference": "21c6deec94e9130a4a6abe44cd001667a62fbcf7",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
-        },
-        {
-            "name": "elgg/pages",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/pages.git",
-                "reference": "ea550773a75ef59223a242db949b6df1d506711e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/pages/zipball/ea550773a75ef59223a242db949b6df1d506711e",
-                "reference": "ea550773a75ef59223a242db949b6df1d506711e",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
-        },
-        {
-            "name": "elgg/profile",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/profile.git",
-                "reference": "8d4c8a6bee0b49aa43bbfafbf3124c5102f83a99"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/profile/zipball/8d4c8a6bee0b49aa43bbfafbf3124c5102f83a99",
-                "reference": "8d4c8a6bee0b49aa43bbfafbf3124c5102f83a99",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
-        },
-        {
-            "name": "elgg/reportedcontent",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/reportedcontent.git",
-                "reference": "ad2012c95d5bbc03de5b934e9c0cf4eb636963e5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/reportedcontent/zipball/ad2012c95d5bbc03de5b934e9c0cf4eb636963e5",
-                "reference": "ad2012c95d5bbc03de5b934e9c0cf4eb636963e5",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
-        },
-        {
-            "name": "elgg/search",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/search.git",
-                "reference": "f948396ef318d14a16e8bb9810193fde19d91358"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/search/zipball/f948396ef318d14a16e8bb9810193fde19d91358",
-                "reference": "f948396ef318d14a16e8bb9810193fde19d91358",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
-        },
-        {
-            "name": "elgg/site_notifications",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/site_notifications.git",
-                "reference": "25c0870c983bdc6de6b7c70ce3aba17430421200"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/site_notifications/zipball/25c0870c983bdc6de6b7c70ce3aba17430421200",
-                "reference": "25c0870c983bdc6de6b7c70ce3aba17430421200",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
-        },
-        {
-            "name": "elgg/thewire",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/thewire.git",
-                "reference": "07b220ac1ad128b79adca3d485dc64a4d3061e83"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/thewire/zipball/07b220ac1ad128b79adca3d485dc64a4d3061e83",
-                "reference": "07b220ac1ad128b79adca3d485dc64a4d3061e83",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
-        },
-        {
-            "name": "elgg/uservalidationbyemail",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Elgg/uservalidationbyemail.git",
-                "reference": "f25516c1f4bf35daa2f16a5ab3fb59a1800f0f8f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Elgg/uservalidationbyemail/zipball/f25516c1f4bf35daa2f16a5ab3fb59a1800f0f8f",
-                "reference": "f25516c1f4bf35daa2f16a5ab3fb59a1800f0f8f",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8"
-            },
-            "type": "elgg-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2015-06-14 08:01:19"
+            "license": [
+                "OFL-1.1",
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Gandy",
+                    "email": "dave@fontawesome.io",
+                    "homepage": "http://twitter.com/davegandy",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The iconic font and CSS framework",
+            "homepage": "http://fontawesome.io/",
+            "keywords": [
+                "FontAwesome",
+                "awesome",
+                "bootstrap",
+                "font",
+                "icon"
+            ],
+            "time": "2015-07-28 21:55:03"
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.4",
+            "version": "1.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "56862959b45131ad33e5a7727a25db19f2cf090b"
+                "reference": "c16222fdc02467eaa12cb6d6d0e65527741f6040"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/56862959b45131ad33e5a7727a25db19f2cf090b",
-                "reference": "56862959b45131ad33e5a7727a25db19f2cf090b",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/c16222fdc02467eaa12cb6d6d0e65527741f6040",
+                "reference": "c16222fdc02467eaa12cb6d6d0e65527741f6040",
                 "shasum": ""
             },
             "require": {
-                "ext-mbstring": "*",
                 "php": ">=5.4.0"
             },
             "require-dev": {
                 "ext-fileinfo": "*",
-                "league/phpunit-coverage-listener": "~1.1",
                 "mockery/mockery": "~0.9",
-                "phpspec/phpspec": "~2.0",
+                "phpspec/phpspec": "^2.2",
                 "phpspec/prophecy-phpunit": "~1.0",
-                "phpunit/phpunit": "~4.1",
-                "predis/predis": "~1.0",
-                "tedivm/stash": "~0.12.0"
+                "phpunit/phpunit": "~4.1"
             },
             "suggest": {
                 "ext-fileinfo": "Required for MimeType",
@@ -1555,8 +1010,7 @@
                 "league/flysystem-rackspace": "Allows you to use Rackspace Cloud Files",
                 "league/flysystem-sftp": "Allows you to use SFTP server storage via phpseclib",
                 "league/flysystem-webdav": "Allows you to use WebDAV storage",
-                "league/flysystem-ziparchive": "Allows you to use ZipArchive adapter",
-                "predis/predis": "Allows you to use Predis for caching"
+                "league/flysystem-ziparchive": "Allows you to use ZipArchive adapter"
             },
             "type": "library",
             "extra": {
@@ -1579,10 +1033,11 @@
                     "email": "info@frenky.net"
                 }
             ],
-            "description": "Many filesystems, one API.",
+            "description": "Filesystem abstraction: Many filesystems, one API.",
             "keywords": [
                 "Cloud Files",
                 "WebDAV",
+                "abstraction",
                 "aws",
                 "cloud",
                 "copy.com",
@@ -1590,6 +1045,7 @@
                 "file systems",
                 "files",
                 "filesystem",
+                "filesystems",
                 "ftp",
                 "rackspace",
                 "remote",
@@ -1597,7 +1053,58 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2015-06-07 21:27:37"
+            "time": "2015-07-28 20:41:58"
+        },
+        {
+            "name": "michelf/php-markdown",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/michelf/php-markdown.git",
+                "reference": "e1aabe18173231ebcefc90e615565742fc1c7fd9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/e1aabe18173231ebcefc90e615565742fc1c7fd9",
+                "reference": "e1aabe18173231ebcefc90e615565742fc1c7fd9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-lib": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Michelf": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "John Gruber",
+                    "homepage": "http://daringfireball.net/"
+                },
+                {
+                    "name": "Michel Fortin",
+                    "email": "michel.fortin@michelf.ca",
+                    "homepage": "https://michelf.ca/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Markdown",
+            "homepage": "https://michelf.ca/projects/php-markdown/",
+            "keywords": [
+                "markdown"
+            ],
+            "time": "2015-03-01 12:03:08"
         },
         {
             "name": "mrclay/minify",
@@ -1650,12 +1157,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "c7be81a763ce05e90ce358b6ec7faea5bf822416"
+                "reference": "4f1925fc351a2f058bb56117203a85c5da8852cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/c7be81a763ce05e90ce358b6ec7faea5bf822416",
-                "reference": "c7be81a763ce05e90ce358b6ec7faea5bf822416",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/4f1925fc351a2f058bb56117203a85c5da8852cc",
+                "reference": "4f1925fc351a2f058bb56117203a85c5da8852cc",
                 "shasum": ""
             },
             "conflict": {
@@ -1673,6 +1180,8 @@
                 "laravel/framework": ">=4.0.0,<4.0.99|>=4.1.0,<4.1.26|>=4.0.0,<4.0.99|>=4.1.0,<4.1.29",
                 "monolog/monolog": ">=1.8.0,<1.12.0",
                 "namshi/jose": "<1.1.2|<2.0.3|<2.2.0",
+                "oro/crm": ">=1.7.0,<1.7.4",
+                "oro/platform": ">=1.7.0,<1.7.4",
                 "pusher/pusher-php-server": "<2.2.1",
                 "sabre/dav": ">=1.6.0,<1.6.9|>=1.7.0,<1.7.7|>=1.8.0,<1.8.5|>=1.6.0,<1.6.99|>=1.7.0,<1.7.11|>=1.8.0,<1.8.9",
                 "socalnick/scn-social-auth": "<1.15.2",
@@ -1696,7 +1205,7 @@
                 "typo3/neos": ">=1.1.0,<1.1.3|>=1.2.0,<1.2.3",
                 "willdurand/js-translation-bundle": "<2.1.1",
                 "yiisoft/yii": ">=1.1.14,<1.1.15",
-                "yiisoft/yii2": "<2.0.4",
+                "yiisoft/yii2": "<2.0.4|<2.0.5",
                 "yiisoft/yii2-bootstrap": "<2.0.4",
                 "yiisoft/yii2-dev": "<2.0.4",
                 "yiisoft/yii2-gii": "<2.0.4",
@@ -1732,67 +1241,20 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2015-06-24 13:43:52"
-        },
-        {
-            "name": "srokap/code_review",
-            "version": "1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Srokap/code_review.git",
-                "reference": "5a5967462217133b1c2ec2a08bc69b1cb23dcf14"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Srokap/code_review/zipball/5a5967462217133b1c2ec2a08bc69b1cb23dcf14",
-                "reference": "5a5967462217133b1c2ec2a08bc69b1cb23dcf14",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": ">=1.0.8",
-                "php": ">=5.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.1"
-            },
-            "type": "elgg-plugin",
-            "autoload": {
-                "classmap": [
-                    "classes/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Paweł Sroka",
-                    "email": "srokap@gmail.com"
-                }
-            ],
-            "description": "Elgg plugin that analyzes plugins code and provides basic information on code quality, compatibility and structure.",
-            "homepage": "https://github.com/Srokap/code_review",
-            "keywords": [
-                "analyzer",
-                "elgg",
-                "plugin",
-                "tools"
-            ],
-            "time": "2015-01-18 21:35:11"
+            "time": "2015-07-12 17:29:58"
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v2.7.1",
+            "version": "v2.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "4f363c426b0ced57e3d14460022feb63937980ff"
+                "reference": "863af6898081b34c65d42100c370b9f3c51b70ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/4f363c426b0ced57e3d14460022feb63937980ff",
-                "reference": "4f363c426b0ced57e3d14460022feb63937980ff",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/863af6898081b34c65d42100c370b9f3c51b70ca",
+                "reference": "863af6898081b34c65d42100c370b9f3c51b70ca",
                 "shasum": ""
             },
             "require": {
@@ -1832,28 +1294,28 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2015-06-10 15:30:22"
+            "time": "2015-07-22 10:11:00"
         },
         {
             "name": "tedivm/stash",
-            "version": "v0.12.3",
+            "version": "v0.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tedious/Stash.git",
-                "reference": "5b830f6a0e4626e5cd02c862d37721ca16820a13"
+                "reference": "e8ecfe8cbbbbb2345b6fb59c56f825685f7a2cb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tedious/Stash/zipball/5b830f6a0e4626e5cd02c862d37721ca16820a13",
-                "reference": "5b830f6a0e4626e5cd02c862d37721ca16820a13",
+                "url": "https://api.github.com/repos/tedious/Stash/zipball/e8ecfe8cbbbbb2345b6fb59c56f825685f7a2cb1",
+                "reference": "e8ecfe8cbbbbb2345b6fb59c56f825685f7a2cb1",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=5.4.0"
             },
             "require-dev": {
-                "fabpot/php-cs-fixer": "1.1.*",
-                "phpunit/phpunit": "4.3.*",
+                "fabpot/php-cs-fixer": "^1.9",
+                "phpunit/phpunit": "4.7.*",
                 "satooshi/php-coveralls": "dev-master"
             },
             "type": "library",
@@ -1886,7 +1348,7 @@
                 "redis",
                 "sessions"
             ],
-            "time": "2015-01-17 07:51:57"
+            "time": "2015-08-02 06:31:49"
         },
         {
             "name": "twistor/flysystem-memory-adapter",
@@ -2186,20 +1648,21 @@
         },
         {
             "name": "zendframework/zend-servicemanager",
-            "version": "2.5.1",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-servicemanager.git",
-                "reference": "3b22c403e351d92526c642cba0bd810bc22e1c56"
+                "reference": "1dc33f23bd0a7f4d8ba743b915fae523d356027a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-servicemanager/zipball/3b22c403e351d92526c642cba0bd810bc22e1c56",
-                "reference": "3b22c403e351d92526c642cba0bd810bc22e1c56",
+                "url": "https://api.github.com/repos/zendframework/zend-servicemanager/zipball/1dc33f23bd0a7f4d8ba743b915fae523d356027a",
+                "reference": "1dc33f23bd0a7f4d8ba743b915fae523d356027a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.23"
+                "container-interop/container-interop": "~1.0",
+                "php": ">=5.5"
             },
             "require-dev": {
                 "fabpot/php-cs-fixer": "1.7.*",
@@ -2214,8 +1677,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev",
-                    "dev-develop": "2.6-dev"
+                    "dev-master": "2.6-dev",
+                    "dev-develop": "2.7-dev"
                 }
             },
             "autoload": {
@@ -2232,24 +1695,24 @@
                 "servicemanager",
                 "zf2"
             ],
-            "time": "2015-06-03 15:32:02"
+            "time": "2015-07-23 21:49:08"
         },
         {
             "name": "zendframework/zend-stdlib",
-            "version": "2.5.1",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-stdlib.git",
-                "reference": "cc8e90a60dd5d44b9730b77d07b97550091da1ae"
+                "reference": "a35758803fc9051ec1aff43989e679b6b451b1b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/cc8e90a60dd5d44b9730b77d07b97550091da1ae",
-                "reference": "cc8e90a60dd5d44b9730b77d07b97550091da1ae",
+                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/a35758803fc9051ec1aff43989e679b6b451b1b4",
+                "reference": "a35758803fc9051ec1aff43989e679b6b451b1b4",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.23"
+                "php": ">=5.5"
             },
             "require-dev": {
                 "fabpot/php-cs-fixer": "1.7.*",
@@ -2270,8 +1733,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev",
-                    "dev-develop": "2.6-dev"
+                    "dev-master": "2.6-dev",
+                    "dev-develop": "2.7-dev"
                 }
             },
             "autoload": {
@@ -2288,24 +1751,24 @@
                 "stdlib",
                 "zf2"
             ],
-            "time": "2015-06-03 15:32:03"
+            "time": "2015-07-21 17:08:05"
         },
         {
             "name": "zendframework/zend-validator",
-            "version": "2.5.1",
+            "version": "2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-validator.git",
-                "reference": "f2c1a1fc786ff4533003cb7fac477495dc007120"
+                "reference": "6b1e4bb249a00603ebbf4023b4b42c867aa79336"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-validator/zipball/f2c1a1fc786ff4533003cb7fac477495dc007120",
-                "reference": "f2c1a1fc786ff4533003cb7fac477495dc007120",
+                "url": "https://api.github.com/repos/zendframework/zend-validator/zipball/6b1e4bb249a00603ebbf4023b4b42c867aa79336",
+                "reference": "6b1e4bb249a00603ebbf4023b4b42c867aa79336",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.23",
+                "php": ">=5.5",
                 "zendframework/zend-stdlib": "~2.5"
             },
             "require-dev": {
@@ -2326,8 +1789,8 @@
                 "zendframework/zend-db": "Zend\\Db component",
                 "zendframework/zend-filter": "Zend\\Filter component, required by the Digits validator",
                 "zendframework/zend-i18n": "Zend\\I18n component to allow translation of validation error messages as well as to use the various Date validators",
+                "zendframework/zend-i18n-resources": "Translations of validator messages",
                 "zendframework/zend-math": "Zend\\Math component",
-                "zendframework/zend-resources": "Translations of validator messages",
                 "zendframework/zend-servicemanager": "Zend\\ServiceManager component to allow using the ValidatorPluginManager and validator chains",
                 "zendframework/zend-session": "Zend\\Session component",
                 "zendframework/zend-uri": "Zend\\Uri component, required by the Uri and Sitemap\\Loc validators"
@@ -2354,7 +1817,7 @@
                 "validator",
                 "zf2"
             ],
-            "time": "2015-06-03 15:32:03"
+            "time": "2015-07-16 19:29:35"
         }
     ],
     "packages-dev": [
@@ -2523,16 +1986,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.1.7",
+            "version": "2.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "07e27765596d72c378a6103e80da5d84e802f1e4"
+                "reference": "2d7c03c0e4e080901b8f33b2897b0577be18a13c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/07e27765596d72c378a6103e80da5d84e802f1e4",
-                "reference": "07e27765596d72c378a6103e80da5d84e802f1e4",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/2d7c03c0e4e080901b8f33b2897b0577be18a13c",
+                "reference": "2d7c03c0e4e080901b8f33b2897b0577be18a13c",
                 "shasum": ""
             },
             "require": {
@@ -2540,7 +2003,7 @@
                 "phpunit/php-file-iterator": "~1.3",
                 "phpunit/php-text-template": "~1.2",
                 "phpunit/php-token-stream": "~1.3",
-                "sebastian/environment": "~1.0",
+                "sebastian/environment": "^1.3.2",
                 "sebastian/version": "~1.0"
             },
             "require-dev": {
@@ -2555,7 +2018,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -2581,20 +2044,20 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-06-30 06:52:35"
+            "time": "2015-08-04 03:42:39"
         },
         {
             "name": "phpunit/php-file-iterator",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
-                "reference": "a923bb15680d0089e2316f7a4af8f437046e96bb"
+                "reference": "6150bf2c35d3fc379e50c7602b75caceaa39dbf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/a923bb15680d0089e2316f7a4af8f437046e96bb",
-                "reference": "a923bb15680d0089e2316f7a4af8f437046e96bb",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/6150bf2c35d3fc379e50c7602b75caceaa39dbf0",
+                "reference": "6150bf2c35d3fc379e50c7602b75caceaa39dbf0",
                 "shasum": ""
             },
             "require": {
@@ -2628,7 +2091,7 @@
                 "filesystem",
                 "iterator"
             ],
-            "time": "2015-04-02 05:19:05"
+            "time": "2015-06-21 13:08:43"
         },
         {
             "name": "phpunit/php-text-template",
@@ -2673,16 +2136,16 @@
         },
         {
             "name": "phpunit/php-timer",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-timer.git",
-                "reference": "83fe1bdc5d47658b727595c14da140da92b3d66d"
+                "reference": "3e82f4e9fc92665fafd9157568e4dcb01d014e5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/83fe1bdc5d47658b727595c14da140da92b3d66d",
-                "reference": "83fe1bdc5d47658b727595c14da140da92b3d66d",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/3e82f4e9fc92665fafd9157568e4dcb01d014e5b",
+                "reference": "3e82f4e9fc92665fafd9157568e4dcb01d014e5b",
                 "shasum": ""
             },
             "require": {
@@ -2710,7 +2173,7 @@
             "keywords": [
                 "timer"
             ],
-            "time": "2015-06-13 07:35:30"
+            "time": "2015-06-21 08:01:12"
         },
         {
             "name": "phpunit/php-token-stream",
@@ -2763,16 +2226,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.7.6",
+            "version": "4.7.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "0ebabb4cda7d066be8391dfdbaf57fe70ac9a99b"
+                "reference": "9b97f9d807b862c2de2a36e86690000801c85724"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/0ebabb4cda7d066be8391dfdbaf57fe70ac9a99b",
-                "reference": "0ebabb4cda7d066be8391dfdbaf57fe70ac9a99b",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9b97f9d807b862c2de2a36e86690000801c85724",
+                "reference": "9b97f9d807b862c2de2a36e86690000801c85724",
                 "shasum": ""
             },
             "require": {
@@ -2831,26 +2294,27 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-06-30 06:53:57"
+            "time": "2015-07-13 11:28:34"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "2.3.4",
+            "version": "2.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "92408bb1968a81b3217a6fdf6c1a198da83caa35"
+                "reference": "18dfbcb81d05e2296c0bcddd4db96cade75e6f42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/92408bb1968a81b3217a6fdf6c1a198da83caa35",
-                "reference": "92408bb1968a81b3217a6fdf6c1a198da83caa35",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/18dfbcb81d05e2296c0bcddd4db96cade75e6f42",
+                "reference": "18dfbcb81d05e2296c0bcddd4db96cade75e6f42",
                 "shasum": ""
             },
             "require": {
                 "doctrine/instantiator": "~1.0,>=1.0.2",
                 "php": ">=5.3.3",
-                "phpunit/php-text-template": "~1.2"
+                "phpunit/php-text-template": "~1.2",
+                "sebastian/exporter": "~1.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.4"
@@ -2886,75 +2350,20 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2015-06-11 15:55:48"
-        },
-        {
-            "name": "phpunit/phpunit-selenium",
-            "version": "1.4.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/giorgiosironi/phpunit-selenium.git",
-                "reference": "c84dd7ca214563868ce216123b7ae9c792beb262"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/giorgiosironi/phpunit-selenium/zipball/c84dd7ca214563868ce216123b7ae9c792beb262",
-                "reference": "c84dd7ca214563868ce216123b7ae9c792beb262",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "ext-dom": "*",
-                "php": ">=5.3.3",
-                "phpunit/phpunit": "~3.7|~4.0",
-                "sebastian/comparator": "~1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "PHPUnit/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "include-path": [
-                ""
-            ],
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sb@sebastian-bergmann.de",
-                    "role": "lead"
-                },
-                {
-                    "name": "Giorgio Sironi",
-                    "email": "info@giorgiosironi.com",
-                    "role": "developer"
-                }
-            ],
-            "description": "Selenium Server integration for PHPUnit",
-            "homepage": "http://www.phpunit.de/",
-            "keywords": [
-                "selenium",
-                "testing",
-                "xunit"
-            ],
-            "time": "2014-11-02 09:23:27"
+            "time": "2015-07-10 06:54:24"
         },
         {
             "name": "sebastian/comparator",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "1dd8869519a225f7f2b9eb663e225298fade819e"
+                "reference": "937efb279bd37a375bcadf584dec0726f84dbf22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/1dd8869519a225f7f2b9eb663e225298fade819e",
-                "reference": "1dd8869519a225f7f2b9eb663e225298fade819e",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/937efb279bd37a375bcadf584dec0726f84dbf22",
+                "reference": "937efb279bd37a375bcadf584dec0726f84dbf22",
                 "shasum": ""
             },
             "require": {
@@ -2968,7 +2377,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -3005,7 +2414,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2015-01-29 16:28:08"
+            "time": "2015-07-26 15:48:44"
         },
         {
             "name": "sebastian/diff",
@@ -3061,16 +2470,16 @@
         },
         {
             "name": "sebastian/environment",
-            "version": "1.2.2",
+            "version": "1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "5a8c7d31914337b69923db26c4221b81ff5a196e"
+                "reference": "6324c907ce7a52478eeeaede764f48733ef5ae44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/5a8c7d31914337b69923db26c4221b81ff5a196e",
-                "reference": "5a8c7d31914337b69923db26c4221b81ff5a196e",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/6324c907ce7a52478eeeaede764f48733ef5ae44",
+                "reference": "6324c907ce7a52478eeeaede764f48733ef5ae44",
                 "shasum": ""
             },
             "require": {
@@ -3107,20 +2516,20 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2015-01-01 10:01:08"
+            "time": "2015-08-03 06:14:51"
         },
         {
             "name": "sebastian/exporter",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "84839970d05254c73cde183a721c7af13aede943"
+                "reference": "7ae5513327cb536431847bcc0c10edba2701064e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/84839970d05254c73cde183a721c7af13aede943",
-                "reference": "84839970d05254c73cde183a721c7af13aede943",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/7ae5513327cb536431847bcc0c10edba2701064e",
+                "reference": "7ae5513327cb536431847bcc0c10edba2701064e",
                 "shasum": ""
             },
             "require": {
@@ -3173,7 +2582,7 @@
                 "export",
                 "exporter"
             ],
-            "time": "2015-01-27 07:23:06"
+            "time": "2015-06-21 07:55:53"
         },
         {
             "name": "sebastian/global-state",
@@ -3228,16 +2637,16 @@
         },
         {
             "name": "sebastian/recursion-context",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/recursion-context.git",
-                "reference": "3989662bbb30a29d20d9faa04a846af79b276252"
+                "reference": "994d4a811bafe801fb06dccbee797863ba2792ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/3989662bbb30a29d20d9faa04a846af79b276252",
-                "reference": "3989662bbb30a29d20d9faa04a846af79b276252",
+                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/994d4a811bafe801fb06dccbee797863ba2792ba",
+                "reference": "994d4a811bafe801fb06dccbee797863ba2792ba",
                 "shasum": ""
             },
             "require": {
@@ -3277,7 +2686,7 @@
             ],
             "description": "Provides functionality to recursively process PHP variables",
             "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
-            "time": "2015-01-24 09:48:32"
+            "time": "2015-06-21 08:04:50"
         },
         {
             "name": "sebastian/version",
@@ -3315,17 +2724,64 @@
             "time": "2015-06-21 13:59:46"
         },
         {
-            "name": "symfony/yaml",
-            "version": "v2.7.1",
+            "name": "srokap/code_review",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Yaml.git",
-                "reference": "9808e75c609a14f6db02f70fccf4ca4aab53c160"
+                "url": "https://github.com/Srokap/code_review.git",
+                "reference": "5a5967462217133b1c2ec2a08bc69b1cb23dcf14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/9808e75c609a14f6db02f70fccf4ca4aab53c160",
-                "reference": "9808e75c609a14f6db02f70fccf4ca4aab53c160",
+                "url": "https://api.github.com/repos/Srokap/code_review/zipball/5a5967462217133b1c2ec2a08bc69b1cb23dcf14",
+                "reference": "5a5967462217133b1c2ec2a08bc69b1cb23dcf14",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": ">=1.0.8",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "elgg-plugin",
+            "autoload": {
+                "classmap": [
+                    "classes/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paweł Sroka",
+                    "email": "srokap@gmail.com"
+                }
+            ],
+            "description": "Elgg plugin that analyzes plugins code and provides basic information on code quality, compatibility and structure.",
+            "homepage": "https://github.com/Srokap/code_review",
+            "keywords": [
+                "analyzer",
+                "elgg",
+                "plugin",
+                "tools"
+            ],
+            "time": "2015-01-18 21:35:11"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v2.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Yaml.git",
+                "reference": "71340e996171474a53f3d29111d046be4ad8a0ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/71340e996171474a53f3d29111d046be4ad8a0ff",
+                "reference": "71340e996171474a53f3d29111d046be4ad8a0ff",
                 "shasum": ""
             },
             "require": {
@@ -3361,42 +2817,12 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-06-10 15:30:22"
+            "time": "2015-07-28 14:07:07"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "elgg/elgg": 20,
-        "elgg/aalborg_theme": 20,
-        "elgg/blog": 20,
-        "elgg/bookmarks": 20,
-        "elgg/ckeditor": 20,
-        "elgg/dashboard": 20,
-        "elgg/developers": 20,
-        "elgg/diagnostics": 20,
-        "elgg/embed": 20,
-        "elgg/externalpages": 20,
-        "elgg/file": 20,
-        "elgg/garbagecollector": 20,
-        "elgg/groups": 20,
-        "elgg/htmlawed": 20,
-        "elgg/invitefriends": 20,
-        "elgg/likes": 20,
-        "elgg/logbrowser": 20,
-        "elgg/logrotate": 20,
-        "elgg/members": 20,
-        "elgg/messageboard": 20,
-        "elgg/messages": 20,
-        "elgg/notifications": 20,
-        "elgg/pages": 20,
-        "elgg/profile": 20,
-        "elgg/reportedcontent": 20,
-        "elgg/search": 20,
-        "elgg/site_notifications": 20,
-        "elgg/thewire": 20,
-        "elgg/uservalidationbyemail": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
