@@ -2,97 +2,13 @@
   "name": "elgg/starter-project",
   "license": "MIT",
   "prefer-stable": true,
-  "authors": [
-    {
-      "name": "Paweł Sroka",
-      "email": "srokap@gmail.com"
-    },
-    {
-      "name": "Evan Winslow",
-      "email": "evan@elgg.org"
-    }
-  ],
   "minimum-stability": "dev",
-  "repositories": [
-    {
-        "type": "package",
-        "package": {
-            "name": "bower-asset/sprintf",
-            "version": "0.7.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/alexei/sprintf.js/archive/v0.7.zip"
-            }
-        }
-    },
-    {
-        "type": "package",
-        "package": {
-            "name": "bower-asset/jquery-imgareaselect",
-            "version": "0.9.10",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/odyniec/imgareaselect/archive/v0.9.10.zip"
-            }
-        }
-    },
-    {
-        "type": "package",
-        "package": {
-            "name": "bower-asset/jquery-ui-extensions",
-            "version": "dev-master",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/scottgonzalez/jquery-ui-extensions/archive/fb7fd7df3d70e0288394f07bfe78262b548c30d6.zip"
-            }
-        }
-    },
-    {
-        "type": "package",
-        "package": {
-            "name": "bower-asset/jquery-jeditable",
-            "version": "1.7.3",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/tuupola/jquery_jeditable/archive/1.7.3.zip"
-            }
-        }
-    }
-  ],
   "require": {
-    "elgg/elgg": "dev-master",
-    "elgg/aalborg_theme": "dev-master",
-    "elgg/blog": "dev-master",
-    "elgg/bookmarks": "dev-master",
-    "elgg/ckeditor": "dev-master",
-    "elgg/dashboard": "dev-master",
-    "elgg/developers": "dev-master",
-    "elgg/diagnostics": "dev-master",
-    "elgg/embed": "dev-master",
-    "elgg/externalpages": "dev-master",
-    "elgg/file": "dev-master",
-    "elgg/garbagecollector": "dev-master",
-    "elgg/groups": "dev-master",
-    "elgg/htmlawed": "dev-master",
-    "elgg/invitefriends": "dev-master",
-    "elgg/likes": "dev-master",
-    "elgg/logbrowser": "dev-master",
-    "elgg/logrotate": "dev-master",
-    "elgg/members": "dev-master",
-    "elgg/messageboard": "dev-master",
-    "elgg/messages": "dev-master",
-    "elgg/notifications": "dev-master",
-    "elgg/pages": "dev-master",
-    "elgg/profile": "dev-master",
-    "elgg/reportedcontent": "dev-master",
-    "elgg/search": "dev-master",
-    "elgg/site_notifications": "dev-master",
-    "elgg/thewire": "dev-master",
-    "elgg/uservalidationbyemail": "dev-master"
+    "elgg/elgg": "^2.0.0-alpha.1"
   },
   "require-dev": {
     "srokap/code_review": "^1.0.5",
-    "phpunit/phpunit": "^4.1"
+    "phpunit/phpunit": "^4.7"
   },
   "scripts": {
     "post-install-cmd": "\\Elgg\\Composer\\PostUpdate::execute",
