@@ -1,4 +1,5 @@
 {
+  "type": "project",
   "name": "elgg/starter-project",
   "license": "MIT",
   "prefer-stable": true,
