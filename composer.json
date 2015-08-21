@@ -12,8 +12,7 @@
     "phpunit/phpunit": "^4.7"
   },
   "scripts": {
-    "post-install-cmd": "\\Elgg\\Composer\\PostUpdate::execute",
-    "post-update-cmd": "\\Elgg\\Composer\\PostUpdate::execute",
+    "post-install-cmd": "\\Elgg\\Composer\\PostInstall::execute",
     "test": "phpunit"
   }
 }
