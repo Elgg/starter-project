@@ -13,6 +13,7 @@
   },
   "scripts": {
     "post-install-cmd": "\\Elgg\\Composer\\PostInstall::execute",
+    "post-package-update": "\\Elgg\\Composer\\PostUpdate::execute",
     "test": "phpunit"
   }
 }
