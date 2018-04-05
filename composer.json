@@ -11,6 +11,16 @@
 	"require-dev": {
 		"phpunit/phpunit": "~6.4"
 	},
+    "autoload-dev": {
+        "psr-0": {
+            "": [
+                "./vendor/elgg/elgg/engine/tests/classes/",
+                "./vendor/elgg/elgg/engine/tests/phpunit/unit/",
+                "./vendor/elgg/elgg/engine/tests/phpunit/integration/",
+                "./vendor/elgg/elgg/engine/tests/simpletest/"
+            ]
+        }
+    },
 	"scripts": {
 		"post-install-cmd": "\\Elgg\\Composer\\PostInstall::execute",
 		"post-package-update": "\\Elgg\\Composer\\PostUpdate::execute",
