@@ -20,6 +20,17 @@
 		"process-timeout": 0,
 		"platform": {
 			"php": "7.0"
-		}
-	}
+		},
+        "fxp-asset": {
+            "enabled": false
+        },
+        "optimize-autoloader": true,
+	    "apcu-autoloader": true
+	},
+	"repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }
