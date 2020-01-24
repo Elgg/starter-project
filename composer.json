@@ -9,7 +9,7 @@
 		"elgg/elgg": "3.*"
 	},
 	"require-dev": {
-		"phpunit/phpunit": "~6.4"
+		"phpunit/phpunit": "~8.5"
 	},
 	"scripts": {
 		"post-install-cmd": "\\Elgg\\Composer\\PostInstall::execute",
@@ -19,7 +19,7 @@
 	"config": {
 		"process-timeout": 0,
 		"platform": {
-			"php": "7.1"
+			"php": "7.2"
 		},
 		"fxp-asset": {
 			"enabled": false
