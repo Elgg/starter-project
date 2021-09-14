@@ -14,3 +14,7 @@ If you wish to install a different version of Elgg use the following branches:
 - for Elgg v3.3 use the branch 3.3
 - for Elgg v3.0, v3.1 or v3.2 use the branch 3.0
 - for Elgg v2.3 use the branch 2.x
+
+## Docker sample site
+
+You can spin up a sample site with `./docker-install.sh` on http://localhost:8080/
