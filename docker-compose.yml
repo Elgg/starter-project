@@ -1,0 +1,68 @@
+version: "3.7"
+services:
+  nginx:
+    image: nginx:alpine
+    ports:
+      - 8080:80
+    depends_on:
+      - php
+    volumes:
+      - ./services/nginx/default.conf:/etc/nginx/conf.d/default.conf:cached,ro
+      - ./index.php:/var/www/html/index.php
+  php:
+    build:
+      context: ./services/php
+    depends_on:
+      - mysql
+    command:
+      - sh
+      - -c
+      - >-
+        chmod -R 0777 /var/data/elgg-data
+
+        exec php-fpm
+    environment:
+      MYSQL_DATABASE: web
+      MYSQL_USER: web
+      MYSQL_PASSWORD: web
+      MYSQL_HOST: mysql
+      WAIT_HOSTS: mysql:3306
+      WAIT_PATHS: /var/www/html/vendor/autoload.php
+      WAIT_SLEEP_INTERVAL: 3
+      ELGG_WWWROOT: http://localhost:8080/
+      ELGG_DATAROOT: /var/data/elgg-data/
+      ELGG_DB_PREFIX: elgg_starter_
+      ELGG_SITE_NAME: "Elgg Starter"
+      ELGG_ADMIN_USER: admin
+      ELGG_ADMIN_EMAIL: admin@example.com
+      ELGG_ADMIN_PASSWORD: '' # Create random
+    volumes:
+      - ./elgg-config:/var/www/html/elgg-config:cached
+      - ./composer.json:/var/www/html/composer.json
+      - ./services/php/composer.lock:/var/www/html/composer.lock
+      - ./index.php:/var/www/html/index.php
+      - ./upgrade.php:/var/www/html/upgrade.php
+      - ./services/php/cli-install.php:/var/www/html/cli-install.php
+      - type: volume
+        source: fs-elgg-data
+        target: /var/data/elgg-data
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: web
+      MYSQL_USER: web
+      MYSQL_PASSWORD: web
+      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+    ports:
+      - 13306:3306
+    volumes:
+      - type: volume
+        source: mysql-data
+        target: /var/lib/mysql
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - 8025:8025
+volumes:
+  ? fs-elgg-data
+  ? mysql-data
