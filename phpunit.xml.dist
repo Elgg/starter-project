@@ -14,6 +14,13 @@
       <directory suffix=".php">*/vendor/*</directory>
       <directory suffix=".php">*/vendors/*</directory>
       <directory suffix=".php">*/tests/*</directory>
+      <directory suffix=".php">*/bower_components/*</directory>
+      <directory suffix=".php">*/node_modules/*</directory>
+      <directory suffix=".php">*/docs/*</directory>
+      <directory suffix=".php">./engine/schema/*</directory>
+      <directory suffix=".php">./engine/vendor_classes/*</directory>
+      <directory suffix=".php">./languages</directory>
+      <directory suffix=".php">./views</directory>
       <directory suffix=".php">./mod/*/languages</directory>
       <directory suffix=".php">./mod/*/views</directory>
       <file>./vendor/elgg/elgg/engine/lib/deprecated-*.php</file>

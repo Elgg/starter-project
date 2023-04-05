@@ -1,12 +1,12 @@
 {
 	"type": "project",
 	"name": "elgg/starter-project",
-	"description": "This is a quickstart skeleton for building a site based on Elgg 4.x.",
+	"description": "This is a quickstart skeleton for building a site based on Elgg 5.x.",
 	"license": "MIT",
 	"prefer-stable": true,
 	"minimum-stability": "dev",
 	"require": {
-		"elgg/elgg": "4.*"
+		"elgg/elgg": "5.*"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~9.5",
@@ -20,7 +20,7 @@
 	"config": {
 		"process-timeout": 0,
 		"platform": {
-			"php": "7.4"
+			"php": "8.0"
 		},
 		"fxp-asset": {
 			"enabled": false
